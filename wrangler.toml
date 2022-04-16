@@ -1,0 +1,17 @@
+name = "soft-genshin"
+type = "javascript"
+workers_dev = true
+compatibility_date = "2022-04-16"
+
+[triggers]
+crons = ["0 5 * * *"]
+
+[build]
+command = "yarn build"
+
+[build.upload]
+format = "service-worker"
+
+# [secrets]
+# HOYOVERSE_ID
+# HOYOVERSE_TOKEN
